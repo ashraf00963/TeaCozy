@@ -1,56 +1,172 @@
 body {
-    background-color: black;
+    margin: 0;
     font-family: Helvetica;
     font-size: 22px;
+    background-color: black;
     color: seashell;
     opacity: 0.9;
-    margin: 0;
+    overflow-x: hidden;
 }
 
 .header {
-    display: inline-flex;
+    display: flex;
+    position: fixed;
     height: 69px;
+    border-bottom: 1px solid seashell;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    border-bottom: 1px solid seashell;
+    background-color: black;
+    z-index: 1;
+    width: 100vw;
 }
 
-.header img{
+.header img {
+    flex: 0 0 0;
     height: 50px;
-    margin-left: 10px;
+    margin: 10px;
+    border: 0;
 }
 
 .header ul {
-    padding: 0;
-    margin: 0;
-    margin-right: 10px;
+    list-style: none;
+    text-decoration: underline;
+    display: flex;
+
 }
 
 .header ul li{
-    display: inline-flex;
-    text-decoration: underline;
-    padding: 10px;
+    margin: 20px;
+}
+
+.header ul li a{
+    color: seashell;
+}
+
+
+p {
+    font-weight: bold;
 }
 
 .mission {
+    position: relative;
     display: flex;
-    background-image: url(./images/img-mission-background.jpg);
-    width: 1200px;
-    height: 700px;
-    margin: 0 auto;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
-.DD {
-    margin: 0;
+.missiontext {
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    width: 1200px;
+}
+
+.mission img {
+    height: 700px;
+    width: 1200px;
+    object-fit: cover;
+    margin-top: 69px;
+}
+
+.missiontext > * {
+    margin: 18px 0;
+}
+
+.featured {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.text {
+    text-align: center;
+    margin: 30px 0;
+}
+
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.three {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.two {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.card {
+    text-align: center;
+    flex: 1 2 0;
+}
+
+.card p{
+    margin: 7px 0 15px 0;
+}
+
+.card img {
+    height: 200px;
+    width: 300px;
+}
+
+.location {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.location h2 {
+    margin: 75px 0 15px 0;
+}
+
+.location img {
+    height: 500px;
+    width: 1200px;
+    object-fit: cover;
+}
+
+.containerone {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: black;
-    width: 100%;
-    line-height: 2;
+    gap: 40px;
+    margin: auto 0;
+    position: relative;
 }
 
+.containerone img {
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.containerone p{
+    font-weight: normal;
+    margin: 35px 0;
+}
+
+.cart {
+    background-color: black;
+    width: 300px;
+    opacity: 1;
+}
+
+.info {
+    text-align: center;
+    height: 200px;
+    margin-top: 120px;
+}
+
+foot p{
+    margin-left: 20px;
+}
